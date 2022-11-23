@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "jelyncornersfullstackbankingapplication",
+    "site": "badbankcornersfirebase",
     "public": "public",
     "ignore": [
       "firebase.json",

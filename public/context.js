@@ -13,7 +13,7 @@ const firebaseConfig = {
   storageBucket: "badbankcornersfirebase.appspot.com",
   messagingSenderId: "716284323929",
   appId: "1:716284323929:web:3a65d2c38adf38fec16948"
-}
+};
 
 firebase.initializeApp(firebaseConfig);
 
