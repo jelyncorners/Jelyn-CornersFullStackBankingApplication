@@ -46,36 +46,36 @@ function NavBar(props){
        
           <li className="nav-item">
               <a  href='/' className="nav-link" aria-current="page"> Home </a>
-              <span>Return Home</span>
+              
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#/CreateAccount/">Create Account</a>
-            <span>Create a Bank Account</span>
+            
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#/login/">Login</a>
-            <span>Account Login</span>
+            
           </li>
           
           <li className="nav-item">
             <a className="nav-link" href="#/deposit/">Deposit</a>
-            <span>Make a Deposit</span>
+            
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#/withdraw/">Withdraw</a>
-            <span>Make a Withdrawal</span>
+            
           </li>
           <li className="nav-item">
             <a className="nav-link"   href="#/balance/">Balance</a>
-            <span>View Balance</span>
+            
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#/alldata/">AllData</a>
-            <span>View All Data</span>
+            
           </li>       
           <li className="nav-item">
             <a className="nav-link" href="#/login/" onClick={handleLogout}>Logout</a>
-            <span>Log Out</span>
+            
           </li>       
         </ul>
         </div>
