@@ -16,9 +16,9 @@ MongoClient.connect(url, {useUnifiedTopology: true}, function(err, client) {
 
     //insert into user table
     var collection = db.collection('users');
-    var doc = {name, email, password, balance, userid};
+    var doc = {name, email, password, balance};
     collection.insertOne(doc, {w:1}, function(err, result) {
-        console.log('Document insert');
+        console.log('Data added to myproject database!');
     });
 
     var customers = db

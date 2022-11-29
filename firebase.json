@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "badbankcornersfirebase",
     "public": "public",
     "ignore": [
       "firebase.json",
