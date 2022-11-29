@@ -8,36 +8,30 @@ function CreateAccount() {
   const ctx = React.useContext(UserContext);
  
 
-  function validate(field, label) {
-      if (!field) {
-          setStatus(`Please enter a valid ${label}`);
-          setTimeout(() => setStatus(''), 3000);
-          return false;
-      }
-      return true;
-  }
-  
-  function checkPassword(password) {
-      if(password.length < 8){
-          alert('Password must be at least 8 characters long');
-          return false;
-      }
-      return true;
+  function validate(field, label){
+    if (!field) {
+      setStatus('Error: Enter ' + label);
+      return false;
+    }
+
+    if (label="password" && field.length<8) {
+      setStatus('Error: Password must be at least 8 characters');
+      return false;
+    }
+
+    return true;
+
   }
 
-  function handleCreate() {
-      console.log(name, email, password)
-      if (!validate(name, 'name')){
-           alert('Name is required');
-          return;
-      } 
-      if (!validate(email, 'email')) {
-          alert('Email is required')
-          return;
-      };
-      if (!checkPassword(password, 'password')){  
-          return;
-      }
+  function handleCreate(){
+    console.log(name,email,password);
+    if (!validate(name,     'name'))     return;
+    if (!validate(email,    'email'))    return;
+    if (!validate(password, 'password')) return;
+    ctx.users.push({name,email,password,balance:0,deposit:[],withdrawal:[]});
+    setShow(false);
+     
+
 
       const auth = firebase.auth();
         const promise = auth.createUserWithEmailAndPassword(email, password);

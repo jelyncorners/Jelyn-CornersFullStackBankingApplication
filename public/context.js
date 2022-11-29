@@ -15,7 +15,10 @@ const firebaseConfig = {
   measurementId: "G-WRDS10B367"
 };
 
-firebase.initializeApp(firebaseConfig);
+
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 function Card(props){
   function classes(){
