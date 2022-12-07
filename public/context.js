@@ -6,13 +6,13 @@ const UserContext = React.createContext(null);
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDztkELBWdGgGICqfrzcDhXWVxMp-xNIE8",
-  authDomain: "jcornersbadbank.firebaseapp.com",
-  projectId: "jcornersbadbank",
-  storageBucket: "jcornersbadbank.appspot.com",
-  messagingSenderId: "360820026498",
-  appId: "1:360820026498:web:d3a97036575f79023a589b",
-  measurementId: "G-WRDS10B367"
+  apiKey: "AIzaSyAUwAvZbQFc96i9jN5cJvvsQYeofNe5CDI",
+  authDomain: "jcornersbadbank-75a0b.firebaseapp.com",
+  projectId: "jcornersbadbank-75a0b",
+  storageBucket: "jcornersbadbank-75a0b.appspot.com",
+  messagingSenderId: "777397107516",
+  appId: "1:777397107516:web:45127086b01a3ef9827c39",
+  measurementId: "G-0XTB37SEWV"
 };
 
 
